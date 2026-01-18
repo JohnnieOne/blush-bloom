@@ -1,0 +1,134 @@
+html,
+body {
+  height: 100%;
+}
+
+/* Page wrapper */
+body {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: var(--dark-text);
+}
+
+/* Main content grows to push footer down */
+.main-content {
+  flex: 1;
+}
+
+.hero-title {
+  color: #ffffff;
+  text-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+  font-family: "Playfair Display", serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --brand-pink: #e75480;
+  --soft-pink: #fde2ea;
+  --dark-text: #333;
+}
+
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  color: var(--brand-pink) !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  position: relative;
+  margin-left: 15px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--brand-pink);
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(231, 84, 128, 0.6), rgba(0, 0, 0, 0.5)),
+    url("images/background.jpg") center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+}
+
+/* Buttons */
+.btn-brand {
+  background: linear-gradient(45deg, #e75480, #ff9dbb);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(231, 84, 128, 0.4);
+}
+
+/* Section Titles */
+.section-title {
+  font-family: "Playfair Display", serif;
+  color: var(--brand-pink);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Forms */
+.form-control {
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+
+textarea.form-control {
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(45deg, #e75480, #ff9dbb);
+  color: white;
+}
