@@ -8,37 +8,119 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Blush & Bloom</a>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="products.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible menu -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="main-content">
-      <div class="container py-5">
-        <h2 class="section-title">About Us</h2>
-        <p>
-          Blush & Bloom is a beauty brand focused on enhancing natural beauty.
-          Our makeup is cruelty-free, inclusive, and designed for everyday
-          elegance.
-        </p>
-      </div>
+      <!-- About Hero -->
+      <section class="about-hero text-center">
+        <div class="container">
+          <h1 class="hero-title">Our Story</h1>
+          <p class="lead">Where beauty, confidence, and elegance bloom</p>
+        </div>
+      </section>
+
+      <!-- About Content -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796"
+                class="img-fluid rounded-4 shadow"
+                alt="Makeup artistry"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <div class="about-box">
+                <h2 class="brand-color mb-3">Blush & Bloom</h2>
+                <p>
+                  Blush & Bloom was created with a simple mission: to celebrate
+                  individuality through beauty. Our products are thoughtfully
+                  crafted to enhance natural features while empowering
+                  confidence.
+                </p>
+                <p>
+                  From silky blushes to richly pigmented palettes, every product
+                  reflects our passion for quality, inclusivity, and
+                  self-expression.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values Section -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="section-title">What We Believe In</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="about-feature">
+                <i class="bi bi-heart-fill"></i>
+                <h5>Cruelty Free</h5>
+                <p>Never tested on animals — always ethical.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="about-feature">
+                <i class="bi bi-stars"></i>
+                <h5>Premium Quality</h5>
+                <p>Luxurious textures with long-lasting results.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="about-feature">
+                <i class="bi bi-globe"></i>
+                <h5>Inclusive Beauty</h5>
+                <p>Designed for every skin tone and style.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
     <footer class="footer mt-auto py-3 bg-body-tertiary">
       <div class="container">
         <span class="text-body-secondary"
