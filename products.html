@@ -43,6 +43,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
+              <li class="nav-item ms-lg-3">
+                <a href="#" class="nav-link position-relative">
+                  👜
+                  <span
+                    id="cart-count"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    0
+                  </span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -59,7 +70,9 @@
                     <h5 class="fw-semibold">Luxury Lipstick</h5>
                     <p>Soft matte • Long-lasting</p>
                     <div class="product-price">$28.00</div>
-                    <a href="#" class="btn btn-brand btn-sm add-to-bag">Add to Bag</a>
+                    <a href="#" class="btn btn-brand btn-sm add-to-bag" data-name="Luxury Lipstick" data-price="28">
+                        Add to Bag
+                    </a>
                   </div>
                 </div>
               </div>
@@ -71,7 +84,9 @@
                     <h5 class="fw-semibold">Silky Blush</h5>
                     <p>Feather-light texture • Natural glow</p>
                     <div class="product-price">$32.00</div>
-                    <a href="#" class="btn btn-brand btn-sm add-to-bag">Add to Bag</a>
+                    <a href="#" class="btn btn-brand btn-sm add-to-bag" data-name="Silky Blush" data-price="32">
+                        Add to Bag
+                    </a>
                   </div>
                 </div>
               </div>
@@ -83,7 +98,9 @@
                     <h5 class="fw-semibold">Eyeshadow Palette</h5>
                     <p>Day to night perfection</p>
                     <div class="product-price">$45.00</div>
-                    <a href="#" class="btn btn-brand btn-sm add-to-bag">Add to Bag</a>
+                    <a href="#" class="btn btn-brand btn-sm add-to-bag" data-name="Eyeshadow Palette" data-price="45">
+                        Add to Bag
+                    </a>
                   </div>
                 </div>
               </div>
@@ -98,5 +115,6 @@
         >
       </div>
     </footer>
+    <script src="cart.js"></script>
   </body>
 </html>
