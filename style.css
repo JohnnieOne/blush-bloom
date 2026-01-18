@@ -24,6 +24,32 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+/* About Page */
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("images/background_2.jpg") center/cover;
+  color: white;
+  padding: 100px 0;
+}
+
+.about-box {
+  background: white;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-feature {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-feature i {
+  font-size: 2.5rem;
+  color: #e75480;
+  margin-bottom: 15px;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap");
 
 :root {
