@@ -13,6 +13,17 @@ body {
   color: var(--dark-text);
 }
 
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e75480;
+  margin-top: 8px;
+}
+
+.add-to-bag {
+  margin-top: 10px;
+}
+
 /* Main content grows to push footer down */
 .main-content {
   flex: 1;
