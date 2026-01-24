@@ -71,3 +71,24 @@ function removeItem(index) {
   updateCartCount();
   renderCart();
 }
+
+// Proceed to checkout - clear cart
+document.addEventListener("DOMContentLoaded", () => {
+  const checkoutBtn = document.getElementById("procced-to-checkout");
+
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener("click", () => {
+      cart = [];
+      localStorage.removeItem("cart");
+
+      updateCartCount();
+      renderCart();
+
+      // Show Bootstrap modal
+      const checkoutModal = new bootstrap.Modal(
+        document.getElementById("checkoutModal")
+      );
+      checkoutModal.show();
+    });
+  }
+});
