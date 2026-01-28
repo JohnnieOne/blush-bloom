@@ -39,7 +39,7 @@ function renderCart() {
   let total = 0;
 
   if (cart.length === 0) {
-    cartItems.innerHTML = "<p>Your bag is empty.</p>";
+    cartItems.innerHTML = "<p>Coșul tău de cumpărături este gol.</p>";
     cartTotal.textContent = "$0.00";
     return;
   }
@@ -55,7 +55,7 @@ function renderCart() {
           <small>$${itemPrice.toFixed(2)}</small>
         </div>
         <button class="btn btn-sm btn-outline-danger" onclick="removeItem(${index})">
-          Remove
+          Elimină
         </button>
       </div>
     `;
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Show Bootstrap modal
       const checkoutModal = new bootstrap.Modal(
-        document.getElementById("checkoutModal")
+        document.getElementById("checkoutModal"),
       );
       checkoutModal.show();
     });
